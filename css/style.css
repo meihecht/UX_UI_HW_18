@@ -6,7 +6,7 @@ body{
     min-height:100vh;
     margin:0;
     padding:0;
-    background-image: url(/images/blob2.png);
+    background-image: url(/images18/blob2.png);
     background-position:top right;
     background-repeat:no-repeat;
 }
@@ -36,6 +36,10 @@ body{
 #thirdSkill{
     grid-area: thirdSkill;
     border:black 1px solid;
+}
+
+#skillsGrid h1{
+    text-align: center;
 }
 
 
