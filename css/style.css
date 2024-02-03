@@ -13,6 +13,32 @@ body{
 /* #travelBuddy{
     margin:40px;
 } */
+
+#skillsGrid{
+    margin:40px;
+    display:grid;
+    min-height:500px;
+    height:75vh;
+    grid-template-rows: 100%;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas:
+    "firstSkill secondSkill thirdSkill";
+}
+
+#firstSkill{
+    grid-area:firstSkill;
+    border: black 1px solid;
+}
+#secondSkill{
+    grid-area: secondSkill;
+    border: black 1px solid;
+}
+#thirdSkill{
+    grid-area: thirdSkill;
+    border:black 1px solid;
+}
+
+
 #projectGrid{
     margin:40px;
     display:grid;
