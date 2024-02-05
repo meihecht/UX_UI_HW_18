@@ -26,15 +26,15 @@ body{
 
 #firstSkill{
     grid-area:firstSkill;
-    border: black 1px solid;
+    /* border: black 1px solid; */
 }
 #secondSkill{
     grid-area: secondSkill;
-    border: black 1px solid;
+    /* border: black 1px solid; */
 }
 #thirdSkill{
     grid-area: thirdSkill;
-    border:black 1px solid;
+    /* border:black 1px solid; */
 }
 
 #skillsGrid h1{
@@ -132,14 +132,16 @@ header.navigation ul{
 
 header.navigation li{
     padding:30px;
+    color:#D9D9D9;
 }
 header.navigation li.active{
-    color:black;
+    color:#D9D9D9;
 
 }
 header.navigation li:hover{
     font-weight:bold;
-    text-decoration-line: underline;
+    /* text-decoration-line: underline; */
+    color:black;
 
 }
 
@@ -197,10 +199,18 @@ footer{
     margin-left:10px;
 
 }
+
 .me.active{
     background-color:#D9D9D9;
 }
 .me:hover{
+    background-color:#17578D;
+    color:#D9D9D9;
+}
+.resume.active{
+    background-color:#D9D9D9;
+}
+.resume:hover{
     background-color:#17578D;
     color:#D9D9D9;
 }
