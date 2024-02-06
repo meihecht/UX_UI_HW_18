@@ -275,7 +275,7 @@ footer{
 
 @media screen and (max-width: 600px){
     #projectGrid{
-        /* margin:40px; */
+        margin:40px;
         /* display:grid; */
         /* min-height:500px; */
         /* height:200vh; */
@@ -291,7 +291,7 @@ footer{
     }
 
     #skillsGrid{
-        /* margin:40px; */
+        margin:40px;
         /* display:grid; */
         /* min-height:500px; */
         /* height:75vh; */
@@ -302,7 +302,65 @@ footer{
             "secondSkill"
             "thirdSkill"
         ;
+
     }
+    #firstProject{
+        grid-area: firstProject;
+        border:black solid 1px;
+    
+    }
+    #firstProjectPic{
+        grid-area: firstProjectPic;
+        border:black solid 1px;
+    }
+    #brentsPlaceDes{
+        grid-area: brentsPlaceDes;
+        border:black solid 1px;
+    }
+    
+    #brentsPlacePic{
+        grid-area:brentsPlacePic;
+        border:black solid 1px;
+        justify-content: center;
+    }
+    #brentsPlacePic img{
+        width:100%;
+        justify-content: center;
+    }
+    
+    .projectGridArea h3{
+        color:black;
+        font-family: 'Red Hat Display';font-size: 64px;
+        text-align: center;
+        font-weight: bolder;
+    }
+    .projectGridArea p{
+        color:black;
+        font-family: 'Red Hat Display';font-size: 20px;
+        /* margin-left: 85px; */
+        /* text-align: center; */
+    }
+
+
+
+
+    #firstSkill{
+        grid-area:firstSkill;
+        border: red 1px solid;
+    }
+    #secondSkill{
+        grid-area: secondSkill;
+        border:red 1px solid;
+    }
+    #thirdSkill{
+        grid-area: thirdSkill;
+        border:red 1px solid;
+    }
+    
+    #skillsGrid h1{
+        text-align: center;
+    }
+
 
 
 }
