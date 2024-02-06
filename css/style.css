@@ -11,8 +11,6 @@ body{
     background-repeat:no-repeat;
 }
 
-
-
 #skillsGrid{
     margin:40px;
     display:grid;
@@ -275,6 +273,39 @@ footer{
     margin-left: 0px;
 }
 
+@media only screen and (max-width:600){
+    #projectGrid{
+        /* margin:40px; */
+        /* display:grid; */
+        /* min-height:500px; */
+        /* height:200vh; */
+        grid-template-rows:50% 50%;
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "firstProjectPic" 
+            "firstProject"
+            "brentsPlaceDes" 
+            "brentsPlacePic"
+        ;
+    
+    }
+
+    #skillsGrid{
+        /* margin:40px; */
+        /* display:grid; */
+        /* min-height:500px; */
+        /* height:75vh; */
+        grid-template-rows: 100%;
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "firstSkill" 
+            "secondSkill"
+            "thirdSkill"
+        ;
+    }
+
+
+}
 
 
 
