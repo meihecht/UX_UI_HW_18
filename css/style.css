@@ -10,6 +10,9 @@ body{
     /* background-position:top right; */
     background-repeat:no-repeat;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 #skillsGrid{
     margin:40px;
@@ -22,18 +25,41 @@ body{
     "firstSkill secondSkill thirdSkill";
 }
 
-#firstSkill{
+#firstSkill {
     grid-area:firstSkill;
     /* border: black 1px solid; */
 }
+#firstSkill img{
+    margin:auto;
+    display:block;
+
+}
+/* #firstSkill li{
+    text-align: center;
+} */
 #secondSkill{
     grid-area: secondSkill;
     /* border: black 1px solid; */
 }
+#secondSkill img{
+    margin:auto;
+    display:block;
+}
+/* #secondSkill li{
+    text-align: center;
+} */
 #thirdSkill{
     grid-area: thirdSkill;
     /* border:black 1px solid; */
 }
+
+#thirdSkill img{
+    margin:auto;
+    display:block;
+}
+/* #thirdSkill li{
+    text-align:center;
+} */
 
 #skillsGrid h1{
     text-align: center;
@@ -157,6 +183,40 @@ header.navigation li:hover{
     /* margin-bottom:-10px; */
     /* padding-bottom:2.5rem; */
 }
+.content a {
+    text-decoration:none;
+    color:white;
+}
+
+.grid {
+    display: grid;
+    height:5vw;
+    width: 165vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+
+    grid-template-areas:
+    "arrow"
+    ;
+
+}
+.gridChild {
+    margin:auto;
+    display:block;
+}
+.arrow {
+    grid-area: arrow;
+    text-align: center;
+    vertical-align: top;
+    /* width:2px; */
+}
+.bounceMe{
+    animation: bounceArrow .7s infinite;
+}
+.grid img{
+    width:60px;
+    /* color:red; */
+}
 
 footer{
     width:98%;
@@ -242,6 +302,17 @@ footer{
     from, to { border-color: transparent }
     50% { border-color:black; }
 }
+@keyframes bounceArrow {
+    from {
+      margin-top: 0px;
+    }
+    50% {
+      margin-top: 7px;
+    }
+    to {
+      margin-top: 0px;
+    }
+  }
 
 .viewProject{
     background-color:grey;
